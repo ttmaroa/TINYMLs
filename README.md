@@ -16,7 +16,9 @@
 *   **Self-Healing:** If one node is damaged or tampered with, the swarm uses **Anomaly Detection** (Z-scores) to ignore the faulty data and keep the mission going.
 
 ### 4. Phase 3: Sustainability & Survival
-*   **The 'Golden Ratio':** We simulated a 24-hour solar cycle. Since these nodes live outside, they must balance 'Thinking Time' with 'Sleeping Time.'
+*   **The 'Golden Ratio':** We simulated a 24-hour solar cycle. Since these nodes live outside, they must balance 'Thinking Time' with 'Sleeping Time.' As you can see, running TinyML every 5 minutes on a small battery might lead to a deficit during the night. 
+- **Strategy:** Your swarm logic should be **Event-Triggered**. Nodes sleep for 60 minutes normally, but if *one* node detects 'High Pollution', it sends a 'Wake Up' signal to its neighbors to increase their frequency to every 5 minutes until the threat passes. 
+
 *   **Power Management:** We proved that a node can survive indefinitely on a 500mAh battery if it intelligently schedules its inferences based on environmental triggers.
 
 ### 5. Future Impact
