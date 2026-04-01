@@ -2,7 +2,7 @@
 
 ### 1. The Core Problem: Static vs. Dynamic Sensing
 *   **Traditional Monitoring:** Large, expensive stations that provide data but don't 'act.'
-*   **The Swarm Vision:** A network of $10 nodes that not only detect pollution but coordinate a response (like deploying repair drones) without needing a central server.
+*   **The Swarm Vision:** A network of nodes that not only detect pollution but coordinate a response (like deploying repair drones) without needing a central server.
 
 ### 2. Phase 1: Building the 'Brain' (TinyML)
 *   **The Data:** We used the UCI Air Quality dataset, focusing on sensor readings (CO, NOx, Temperature, Humidity).
